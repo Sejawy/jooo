@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1421846fa1.js" crossorigin="anonymous"></script>
+  <!-- style css -->
+  <link rel="stylesheet" href="css/sty.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+    <title>BB&E</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">B&B&E</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Landing Page</a></li>
+            <% if (user) {%>
+              <% if (user.role === 'member') {%>
+                <li><a href="/member">home</a></li>
+              <%} else if (user.role === 'author') {%>
+                <li><a href="/author">Author</a></li>
+              <%}%>
+              <li><a href="/auth/logout">Logout</a></li>
+            <%} else {%>
+              <li><a href="/auth/signup">Signup</a></li>
+              <li><a href="/auth/login">Login</a></li>
+            <%}%>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <!-- header inner -->
+        <div class="head_top">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="https://imgbb.com/"><img src="icons/b-logo1.png" alt="b-logo1"></a><br />
+                                        <a target='_blank' href='https://whatsmyscreenresolution.com/'></a><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                                <div class="collapse navbar-collapse" id="navbarsExample04">
+                                        
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main ">
+                <div class="container-fluid ">
+                    <div class="row d_flex ">
+                        <div class="col-md-5 ">
+                            <div class="text-bg ">
+                                <h1>Buy,Borrow and <br>Exchange</h1>
+                                <span>Free and easy to use</span>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-7 padding_right1 ">
+                            <div class="text-img ">
+                                <figure><img src= "/images/top_img.png" alt="# " /></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- end banner -->
+    <!-- about -->
+    <div id="about " class="about ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="titlepage ">
+                        <h2>About BB&E</h2>
+                        <span>A free platform to buy borrow and exchange things you want Totally safe and easy to use   </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-8 offset-md-2 ">
+                    <div class="about_box titlepage ">
+                        <figure><img src="images/about_img.png " alt="# " /></figure>
+                        <span class="ct_acc">Create your free acount now </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+
+    <!-- Features -->
+
+    <section class="white-section" id="features">
+
+        <div class="row">
+
+            <div class="col-lg-4 feature-box">
+                <i class="fas-icons fas fa-user-shield fa-4x"></i>
+                <h3 class="features-title">Safe, easy to use.</h3>
+                <p class="features-p">Safe for your information and your identity and easy to use.</p>
+            </div>
+
+            <div class="col-lg-4 feature-box">
+
+                <i class="fas-icons fas fa-exchange-alt fa-4x"></i>
+                <h3 class="features-title">Exchange.</h3>
+                <p class="features-p">The ability to exchange things.</p>
+            </div>
+
+            <div class="col-lg-4 feature-box">
+                <i class="fas-icons fas fa-shopping-cart fa-4x"></i>
+                <h3 class="features-title">Buy</h3>
+                <p class="features-p">Buy or sell anything u want.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- two_box section -->
+    <div class="two_box ">
+        <div class="container-fluid ">
+            <div class="row d_flex ">
+                <div class="col-md-6 ">
+                    <div class="two_box_img ">
+                        <figure><img src="images/leptop.jpg " alt="# " /></figure>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="two_box_img ">
+                        <h2><span class="offer ">15% </span>0ffer everyday</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end two_box section -->
+    <!-- testimonial -->
+    <div id="carouselExampleIndicators" class="carousel slide testimonial" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/books.jpg" class=" test_images " alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>i exchanged this books wit my old books</h5>
+                </div>
+
+            </div>
+            
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- end testimonial -->
+
+    <!--  footer -->
+    <footer>
+        <div class="footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <div class="cont ">
+                            <h3> <strong class="multi "> Gmail</strong><br> xyz@gmail.com
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="cont_call ">
+                            <h3> <strong class="multi "> Call Now</strong><br> (+2) 123456789
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p>© 2021 All Rights Reserved. Design by Youssef Wael
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>

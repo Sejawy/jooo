@@ -1,0 +1,25 @@
+{
+  "name": "sginup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yassin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.2",
+    "connect-mongo": "^4.6.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.0"
+  }
+}

@@ -1,0 +1,179 @@
+body{
+    font-family: 'Nunito';
+}
+.yuvarlak{
+    background-color: #00b300;
+    border-radius: 100px;
+    width:10px;
+    height:10px;
+    float: right;
+    margin: 0 auto;
+}
+.bildirim{
+    background-color: #ffd699;
+}
+.titles{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
+}
+.aktif{
+    box-sizing: border-box;
+    border:solid 4px #575ed8;
+    -webkit-filter: blur(5px);
+    filter: blur(2px);
+}
+
+#black{
+    background-color: #000;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 5px;
+}
+#blue{
+    background-color: blue;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 5px;
+}
+#red{
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 5px;
+}
+#green{
+    background-color: green;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 5px;
+}
+#yellow{
+    background-color: yellow;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+#mainroom{
+    width: 250px;
+    height: 429px;
+    float: left;
+    margin-left: 98px;
+    margin-top: 73px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+#rooms{
+    width: 100%;
+    height: 358px;
+    background: #f9f9f9;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+#liste{
+    width: 250px;
+    height: 429px;
+    float: left;
+    margin-right: 98px;
+    margin-top: 73px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+#users{
+    width: 100%;
+    height: 358px;
+    background: #f9f9f9;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+#users li{
+    padding-left: 20px;
+    padding-top: 10px;
+    /*margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;*/
+    color: #555;
+    background: #f9f9f9;
+}
+#users li:hover{
+    color: #575ed8;
+}
+#odalar p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+#odalar p:hover{
+    color: #575ed8;
+}
+#anadiv{
+    width: 550px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    float: left;
+}
+#home{
+    height: 380px;
+    background: #f9f9f9;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+.tab-pane p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #575ed8;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+#Send{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Websockets</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styless.css">
+	<link rel="stylesheet" type="text/css" href="csss/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="csss/bootstrap-theme.min.css">
+</head>
+<body>
+	<div id="mainroom">
+		<h2 class="titles">Online Rooms</h2>
+		<div id="rooms">
+		</div>
+	</div>
+	<div id="anadiv">
+		<h2 style="color: #575ed8;margin-left: 10px;">Chat room
+			<div style="float: right;margin-right: 10px;">
+				<div class="renk" id="black"></div>
+				<div class="renk" id="blue"></div>
+				<div class="renk" id="green"></div>
+				<div class="renk" id="red"></div>
+				<div class="renk" id="yellow"></div>
+			</div>
+		</h2>
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<div id="output"></div>
+				<div id="feedback"></div>
+			</div>
+		</div>
+		<!--TAB-->
+		<ul class="nav nav-tabs" id="tabmenu">
+			<li id="general" class="active"><a href="#home" data-toggle="tab">General</a></li>
+		</ul>
+		<!--TAB-->
+		<input id="Message" type="text" placeholder="Message"/>
+		<button id="Send">Send</button>
+	</div>
+	<div id="liste">
+		<h2 class="titles">Online Users<div  id="users" style="float: right"></div></h2>
+		<div id="users">
+		</div>
+	</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jss/bootstrap.min.js" type="text/javascript"></script>
+<script src="jss/lodash.js" type="text/javascript"></script>
+<script src="jss/chat.js"></script>
+</html>
+

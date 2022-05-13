@@ -1,0 +1,24 @@
+.post-input-title {
+    display: inline-block;
+    padding: 10px 50px;
+    width: 500px;
+}
+
+.add-image {
+    display: inline-block;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.add-image-iamge {
+    width: 300px;
+    height: 200px;
+}
+
+@media(max-width: 200px) {
+    .add-image {
+        display: block;
+    }
+}

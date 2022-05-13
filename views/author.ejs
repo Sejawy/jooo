@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css">
+
+	
+<title>Author</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">B&B&E</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Landing Page</a></li>
+            <% if (user) {%>
+              <% if (user.role === 'member') {%>
+                <li><a href="/member">home</a></li>
+              <%} else if (user.role === 'author') {%>
+                <li><a href="/author">Author</a></li>
+              <%}%>
+              <li><a href="/auth/logout">Logout</a></li>
+            <%} else {%>
+              <li><a href="/auth/signup">Signup</a></li>
+              <li><a href="/auth/login">Login</a></li>
+            <%}%>
+          </ul>
+        </div>
+      </nav>
+<h1>Author Page</h1>
+<ul>
+    <li>nickname: <%= user.nickname %></li>
+    <li>age: <%= user.age %></li>
+    <li>email: <%= user.email %></li>
+    <li>_id: <%= user._id %></li>
+</ul>
+</body>
+</html>
